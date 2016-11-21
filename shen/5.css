@@ -1,0 +1,347 @@
+*{
+	margin:0px auto;
+	padding: 0px;
+}
+body{
+	font-size: 12px;
+	font-family: '微软雅黑';
+	color: #666;
+
+}
+a{
+	text-decoration: none;
+	color:#666;
+}
+a:hover{
+	text-decoration: underline;
+	color: red;
+}
+input{
+	outline: none;
+}
+ul,ol{
+	list-style-type: none;
+}
+.crl{
+	clear: both;
+}/*这个很重要，是用来清除浮动的*/
+#logbar,#topbar,#manubar,#mainbar,#maylike,#recentshow,#service,#footer{
+	width:1021px;
+    margin:0px auto;
+}
+#topbarHolder{
+	width: 100%;
+	background-color: #F7F7F7;
+	border-bottom:1px solid #EEE;
+}
+#topbar{
+	height: 30px;
+	line-height: 30px;
+}
+#topbar img{
+	transform: rotate(0deg);
+	transition: transform 3s linear 1s;
+}
+#topbar img:hover{
+	transform: rotate(360deg);
+}
+#topbar ul{
+	float: right;
+}
+#topbar ul li{
+	float: left;
+	}
+#topbar li b{
+	display: inline-block;
+	border: 1px solid #ddd;
+    height: 1em;/*行内快才有宽和高，所以定义为行内块*/
+    margin:0px 10px; 
+    vertical-align: middle;
+}
+#memberClub{
+	background: url("vip.jpg") no-repeat left 3px;/*为什么是3px,主要是因为文字效果带来的背景图片不和文字对齐，要想对齐要自己设置图片的竖直高度，也要考虑到图片自身的高度问题*/
+	padding-left: 25px;
+
+}
+#enterprise{
+	background: url("dakehu.jpg") no-repeat left 3px;/*为什么是3px,主要是因为文字效果带来的背景图片不和文字对齐，要想对齐要自己设置图片的竖直高度，也要考虑到图片自身的高度问题*/
+	padding-left: 25px;
+	z-index: 3;
+}
+#helpServervice,#mobileJD,#mobileJDSpan{
+	display: inline-block;/*为了和b在一个上面，不是块级元素*/
+	position: relative;
+	}
+#helpServervice>a{
+	position: relative;
+	padding: 3px 10px 3px 3px;
+	z-index: 5;
+	/* border: 1px solid #ddd;
+	border-bottom: 0;
+	background-color: #fff;
+	*/
+	/* border:1px solid transparent; */
+	} 
+#helpServervice ul{
+
+	position: absolute;
+  	top:25px;	
+	width: 70px;
+	line-height: 20px;
+	display: none;
+	background: #fff;
+	box-shadow: 0px 0px 6px #eee;
+	border: 1px solid #ddd;
+	z-index: 4;
+}
+#mobileJDSpan{
+	position: relative;
+	padding: 0px 0px 0px 5px;
+	/* border: 1px solid #ddd; */
+	line-height: 20px;/*为解决边宽问题*/
+    z-index: 5;
+
+}
+#mobileJDa{
+   
+	padding: 0px 5px 0px 0px;
+	
+	/*border: 1px solid #ddd;
+	border-bottom: 0;
+	background-color: #fff;
+	
+	 border:1px solid transparent;*/ 
+}
+#mobileJD_bottom{
+	position: absolute;
+  	top:27px;	
+	width: 70px;
+	line-height: 20px;
+	display: none;/*若是不给none则会从别的地方继承下来一个block属性*/
+	background: #fff;
+	box-shadow: 0px 0px 6px #eee;
+	border: 1px solid #ddd;
+	z-index: 4;
+}
+#logbar{
+	/*height: 90px;*/
+	/*background-color: green;*/
+	padding: 15px 0px 15px 0px;
+}
+#logbar a{
+	float: left;
+}
+#SearchBar{
+	width:495px;
+	height: 30px;
+	border:3px solid #E4393C;
+	background-color: #E4393C;
+}
+#SearchBar #text{
+	padding: 8px 6px;
+	height: 14px;
+	border:none;
+	font-family: '微软雅黑';
+	/*font-weight: bold;*/
+	font-size: 14px;
+	color: #666;
+	width: 403px;
+
+}
+#SearchBar #button{
+	color: #fff;
+	border: none;
+	background-color: #E4393C;
+	width: 70px;
+	height: 30px;
+	cursor: pointer;
+}
+#SearchContainer{
+	float: left;
+	margin-left: 60px;
+	padding:15px 0px 0px 0px;
+}
+#SearchContainer ul li{
+ 	display: inline-block;
+ 	margin: 5px;
+ 	float: left;
+}
+#manubar{
+	height: 80px;
+	background-color: grey;
+}
+#mainbar{
+	height: 180px;
+	background-color: blue;
+}
+#maylike{
+	height: 80px;
+	background-color: red;
+}
+#recentshow{
+	height: 120px;
+	background-color: grey;
+}
+#footer{
+	height: 80px;
+	background-color: blue;
+}
+
+#service{
+	height: 80px;
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

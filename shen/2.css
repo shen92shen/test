@@ -1,0 +1,64 @@
+div{
+	width: 900px;
+	border: 1px solid black;
+}
+
+#mt,#table,#footer{
+	width: 898px;
+	margin:0px auto;
+}
+#box{
+	
+	border-bottom:2px solid #ccc;
+	margin:0px auto;
+
+}
+
+#mt{
+	height: 30px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc; 
+}
+#tab{
+	border-collapse: collapse;
+
+}
+
+td.w300{
+	width: 500px;
+}
+td.w200{
+	width: 100px;
+}
+td.w200{
+	width: 100px;
+}
+td.cols4{
+	width: 198px;
+}
+#tab td{
+	height: 20px;
+	border-bottom: 1px dotted red;
+}
+#tab tr.data td{
+height: 22px;
+font-weight: bold;
+border-bottom: 1px solid red;
+}
+#footer{
+	height: 30px;
+	/*border-bottom: 2px solid #ccc;show differernt between #box,#box is has a*/
+}
+body{
+	font-family: times;
+	font-size: 10pt;
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: green;
+
+}
+a:hover{
+	text-decoration: underline;
+}

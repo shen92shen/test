@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="5.css">
+	<script type="text/javascript">
+	function showService(){
+
+	document.getElementById('showul').style.display='block';
+	document.getElementById('serviceCus').style.backgroundColor='#fff';
+	document.getElementById('serviceCus').style.border='1px solid #eee';
+	document.getElementById("serviceCus").style.borderBottom='0';
+	// body...
+	}
+
+function leaveService(){
+	document.getElementById('showul').style.display='none';
+	document.getElementById('serviceCus').style.backgroundColor='F7F7F7';
+	document.getElementById('serviceCus').style.border='1px solid transparent';
+	
+}
+ function showMobileJD(div1){
+ 	document.getElementById('mobileJD_bottom').style.display='block';
+ 	/*document.getElementById('mobileJD_bottom').style.backgroundColor='#fff';
+	document.getElementById('mobileJD_bottom').style.border='1px solid #eee';
+	document.getElementById("mobileJD_bottom").style.borderBottom='0';*/
+	document.getElementById('mobileJDSpan').style.border='1px solid #ddd';
+	document.getElementById('mobileJDSpan').style.backgroundColor='#fff';
+	document.getElementById('mobileJDSpan').style.borderBottom='0';
+	document.getElementById('mobileJDSpan').style.height='23px';
+ 	
+
+ }
+ function hideMobileJD(div1){
+ 	document.getElementById('mobileJD_bottom').style.display='none';
+ 	document.getElementById('mobileJDSpan').style.border='1px solid transparent';
+ 	document.getElementById('mobileJDSpan').style.backgroundColor='F7F7F7';
+ 	
+ }
+	</script>
+</head>
+<body>
+<div id="topbarHolder">
+<!--top栏-->
+<div id="topbar">
+<img src="star.jpg" >
+<a href="#">收藏京东</a>
+<ul>
+<li>欢迎来到京东,
+<a href="">[请登录]</a><a href="">[免费注册]</a></li>
+<li><b></b>我的订单</li>
+<li><b></b><a id="memberClub" href="#">会员俱乐部</a></li><!--背景图片中的高度是和字的居中相关的，要改变图片的位置首先要调整位置-->
+<li><b></b><a id="enterprise" href=""></a>企业频道</li>
+<li><b></b>
+<div id="mobileJD" onmouseover="showMobileJD('div1')" onmouseout="hideMobileJD('div1')"><span id="mobileJDSpan"><a id="mobileJDa">手机京东</a></span>
+<div id="mobileJD_bottom">
+	<p>收藏京东</p>
+	<p>扫一扫</p>
+</div>
+</div>
+</li>
+<li>
+<b></b>
+<div id="helpServervice" onmouseover="showService()" onmouseout="leaveService()">
+	<a href="#" id="serviceCus">客户服务</a>
+	<ul id="showul">
+		<li>在线帮组</li>
+		<li>拨打电话</li>
+	</ul>
+	
+</div>
+</li>
+<li><b></b>网站导航</li>
+</ul>
+</div>
+<!--toplan-->
+</div>
+<!--Log栏-->
+<div id="logbar">
+	<a href=""><img src="logo-201305.png"></a>
+	<div id="SearchContainer">
+	<div id="SearchBar">
+		<input type="text" name="" id="text" /><input type="button" value="搜索" id="button" name=""/>
+	</div>
+	<ul>
+		<li>热门销售:</li>
+		<li><a href="">洗衣液</a></li>
+		<li><a href="">方便面</a></li>
+	</ul>
+	</div>
+	<div class="crl"></div>
+</div>
+<!--menu栏-->
+<div id="manubar">
+	manubar
+</div>
+<!--main栏-->
+<div id="mainbar">
+	mainbar
+</div>
+<!--maylike-->
+<div id="maylike">
+	maylike
+</div>
+<!--recentshow-->
+<div id="recentshow">
+	recentshow
+</div>
+<!--service-->
+<div id="service">
+	service
+</div>
+<!--footer-->
+<div id="footer">
+	footer
+</div>
+
+</body>
+</html>
